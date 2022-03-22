@@ -11,7 +11,7 @@ const SubmitScreen = ({ route, navigation }) => {
     async function ApiCall() {
       try {
         const resp = await axios.get(
-          `https://api.nasa.gov/neo/rest/v1/neo/${Id}?api_key=Nk49QxTggaf0lThVEHMJJ4w6VPNEKacA1cbsC2mO`
+          `https://api.nasa.gov/neo/rest/v1/neo/${Id}?api_key=<Your_Api_key>`
         );
         setData(resp.data);
       } catch (error) {
